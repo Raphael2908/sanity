@@ -31,8 +31,8 @@ def train(env):
     best_agent = None
     high_score = 0
 
-    for _ in range(3):
-        new_agent = new_agent = np.random.random(4)*2 - 1
+    for _ in range(5):
+        new_agent = np.random.random(4)*2 - 1
         reward = play_one_episode(agent=new_agent, env=env)
         
         if(reward > high_score):
